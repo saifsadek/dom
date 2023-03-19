@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>shopping cart</title>
+</head>
+<body>
+  <section>
+    <div class="title">
+      <p class="total">Shopping Bag Total : <span id="total">0</span> <span>$</span></p>
+    </div>
+    <div class="part" id="part1">
+      <div class="icons">
+        <i class="fas fa-skull" onclick="remove()"></i>
+        <i class="fas fa-heart" id="heart" onclick="heart1()"></i>
+      </div>
+      <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5OthjDdp5udOBWcOKiqE38wLffRyLVV35_3kK0gpj-w&s" alt="">
+      <span class="product-name"><strong>Sbedri</strong><br> White</span>
+      <div class="btns">
+        <span class="btn" onclick="inc()">+</span>
+        <span class="btn" id="product-qtn">0</span>
+        <span class="btn"  onclick="dec()">-</span>
+      </div>
+      <p class="product-price"><span id="product1price">0</span> <span>$</span></p>
+    </div>
+    <div class="part" id="part2">
+        <div class="icons">
+          <i class="fas fa-skull" onclick="remove2()"></i>
+          <i class="fas fa-heart" id="heart" onclick="heart2()"></i>
+        </div>
+        <img class="image" src="https://tse4.mm.bing.net/th?id=OIP.nhqA-6ZytGgvcvQP4L9AxQHaHa&pid=Api&P=0&w=300&h=300" alt="">
+        <span class="product-name"><strong>Sneakers</strong><br> White</span>
+        <div class="btns">
+          <span class="btn" onclick="inc2()">+</span>
+          <span class="btn" id="product-qtn2">0</span>
+          <span class="btn"  onclick="dec2()">-</span>
+        </div>
+        <p class="product-price"><span id="product1price2">0</span> <span>$</span></p>
+      </div>
+      <div class="part" id="part3">
+          <div class="icons">
+            <i class="fas fa-skull" onclick="remove3()"></i>
+            <i class="fas fa-heart" id="heart" onclick="heart3()"></i>
+          </div>
+          <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFIpyNJQahW4ZNedXg1vrWpUZY3GZoeq0ruA&usqp=CAU" alt="">
+          <span class="product-name"><strong>Scraf</strong><br>Brown</span>
+          <div class="btns">
+            <span class="btn" onclick="inc3()">+</span>
+            <span class="btn" id="product-qtn3">0</span>
+            <span class="btn" onclick="dec3()">-</span>
+          </div>
+          <p class="product-price"><span id="product1price3">0</span> <span>$</span></p>
+        </div>
+  
+    
+  </section>
+</body>
+<script src="./script.js"></script>
+</html>
